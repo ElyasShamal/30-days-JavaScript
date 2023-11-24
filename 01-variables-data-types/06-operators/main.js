@@ -88,3 +88,11 @@ Greater Than or Equal To (>=): Checks if the left operand is greater than or equ
 Less Than or Equal To (<=): Checks if the left operand is less than or equal to the right operand.
 
 */
+
+/*  
+Logical Operators:
+Logical AND (&&): Returns true if both operands are true.
+Logical OR (||): Returns true if at least one operand is true.
+Logical NOT (!): Returns the opposite of the operand's logical state.
+
+*/
