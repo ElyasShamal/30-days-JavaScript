@@ -1,7 +1,7 @@
 //What is variables ?
 
 // variables are containers for storing data or values for later use
-// or variable is  like a box for holding data
+// or variable is a box for holding data
 
 // How to declear variables ?
 
@@ -11,7 +11,7 @@
 // The var keyword was used in all JavaScript code from 1995 to 2015 and have scope and Hoisting issues
 //Reassignment: Unlike const, variables declared with Var can be reassigned.
 
-var myName = "Elyas"; // declear firstName variable using var and assign it to "Elyas"
+var myName = "Elyas"; // declear myName variable using var and assign it to "Elyas"
 console.log(myName);
 
 //Reassignment:
