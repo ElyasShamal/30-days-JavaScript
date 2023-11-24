@@ -1,7 +1,7 @@
 //What is variables ?
 
 // variables are containers for storing data or values for later use
-// or variable is like a box for holding data
+// or variable is  like a box for holding data
 
 // How to declear variables ?
 
@@ -51,3 +51,49 @@ if (true) {
   const blockScoped = "I'm block-scoped";
 }
 console.log(blockScoped); // Error: blockScoped is not defined
+
+// When to Use var, let, or const?
+
+// 1. Always use const if the value should not be changed
+
+// 2. Always use const if the type should not be changed (Arrays and Objects)
+
+// 3. Only use let if you can't use const and the value is changable
+
+// 4. Only use var if you MUST support old browsers.
+
+/*
+
+JavaScript Identifiers
+All JavaScript variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter.
+Names can also begin with $ and _ (but we will not use it in this tutorial).
+Names are case sensitive (name and Name are different variables).
+Reserved words (like JavaScript keywords) cannot be used as names.
+
+*/
+
+// declear multiple variables in one line using let
+
+let a, b, c; // declear 3 variable in one line
+a = 10;
+b = 20;
+c = 30;
+console.log(c);
+
+// declear multiple variables in one line using const
+
+// const d,e,f   error must be initialized
+
+const d = 40,
+  f = 50,
+  e = 60;
+console.log(e);
