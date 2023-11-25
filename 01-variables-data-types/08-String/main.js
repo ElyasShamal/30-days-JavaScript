@@ -41,22 +41,22 @@ console.log(x);
 x = sayHi.indexOf("W"); // way to find index or key of a string using .indexOf()
 console.log(x);
 
-// Substring()  take to numbers start and end in letters and return those latters
+// Substring()  take two numbers start and end and return those words
 // and if we add one number it will start from that number and retrun the rest
 
 x = sayHi.substring(0, 5); //
 console.log(x); // Output:  hello
 
-x = sayHi.substring(6); // add one number it will letters that are after 7
+x = sayHi.substring(6); // add one number it will return words that are after 6
 console.log(x);
 
 // Slice in string
-// its lite SubString() but i slice we can add -1 numbers too
+// its like SubString() but in slice we can add -numbers too
 // is a bit more flexible, and it accepts negative values for the start and end parameters, which can be used to extract characters from the end of the string.
 x = sayHi.slice(0, 5);
-console.log(x, "i am From slice");
+console.log(x, "i am From slice"); // outputs ; Hello i am from slice
 
-x = sayHi.slice(-11, -6); // -1 numbers
+x = sayHi.slice(-11, -6); // -numbers
 console.log(x);
 
 // what is trim() ?
@@ -69,7 +69,7 @@ alltext = alltext.trim();
 console.log(alltext);
 
 // replace
-// take two numbers old text and new text
+// take two word old word  and new word for replace
 
 let FullName = "Elyas Shamal";
 console.log(FullName); // outputs : Elyas shamal
@@ -78,8 +78,45 @@ let changeName = FullName.replace("Elyas", "Mohammad");
 console.log(changeName); // "Elyas" changed to Mohammad  output : Mohammmad Shamal
 
 //.include()
-// fint if the text have that letter or word
+// is used to find if the text have that letter or word
 
 let myJob = "Web Developer"; // have D
-let ifInclude = myJob.includes("D"); // added to include() to chec k
+let ifInclude = myJob.includes("D");
 console.log(ifInclude); // outputs : true
+
+// valueOf()
+// is used to get the value of a variable
+
+let value = "hi";
+let variableValue = value.valueOf();
+console.log(variableValue);
+
+// spilt()
+// is used to change a string to Array
+
+let paragragh = "Hello, i am john";
+console.log(paragragh); // outputs: Hello i am john
+let spiltPragragh = paragragh.split(" "); // split by whitespace
+console.log(spiltPragragh); //outputs : ['Hello, i am john']
+spiltPragragh = paragragh.split("");
+console.log(spiltPragragh); // split by each charecter
+
+// capitalize Challenge
+
+//solution 1
+let MyString = "developer";
+
+let capitalize = MyString.charAt(0).toUpperCase() + MyString.substring(1);
+
+console.log(capitalize);
+
+// solution 2
+
+capitalize = MyString[0].toUpperCase() + MyString.substring(1);
+console.log(capitalize);
+
+//solution 3
+
+capitalize = `${MyString[0].toUpperCase()}${MyString.slice(1)}`;
+
+console.log(capitalize);
