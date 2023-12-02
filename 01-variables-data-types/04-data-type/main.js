@@ -57,7 +57,7 @@ console.log(result);
 
 // object literal , array and function are all reference type
 
-//how get type od a varibale ?
+//how we can get type of a varibale ?
 //we can get that using typeof
 
 let myNumber = 200;
